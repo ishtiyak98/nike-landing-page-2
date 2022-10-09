@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+nav{
+    padding: 30px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.middle-nav ul{
+    display: flex;
+}
+
+.middle-nav ul li{
+    list-style: none;
+}
+
+.middle-nav ul li:nth-child(2){
+    margin: 0px 40px;
+}
+
+.middle-nav ul li a{
+    color: rgb(20, 20, 20);
+    
+}
+
+.right-nav{
+    display: flex;
+    align-items: center;
+}
+
+.right-nav .cart-icon{
+    font-size: 24px;
+    margin-right: 40px;
+}
+
+.button-style a{
+    color: white;
+    padding: 10px 40px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 5px;
+}
+
+.main-part{
+    height: 100vh;
+    padding: 0px 120px;
+    display: flex;
+    align-items: center;
+}
+
+.main-part .text-area{
+    width: 50%;
+}
+
+.main-part .text-area h1{
+    font-size: 85px;
+}
+
+.main-part .text-area p{
+    font-size: 24px;
+    font-weight: 500;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 38px;
+}
+
+.main-part .img-area{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-part .img-area img{
+    width: 700px;
+    transform: rotate(-25deg);
+    margin-left: -180px;
+}
+
+.bounce{
+    animation-name: up-down;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes up-down {
+    0% {
+      transform: translateY(15px);
+    }
+    100% {
+      transform: translateY(-15px);
+    }
+}
+
+.main-part .img-area .circle{
+    position: absolute;
+    
+    /* top: -40%;
+    left: 10%; */
+    width: 600px;
+    height: 600px;
+    /* background-color: #E6E6E4; */
+    border: 40px solid #E6E6E4;
+    border-radius: 50%;
+}
+
+.main-part .img-area .circle-2{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-color: #E6E6E4;
+    border-radius: 50%;
+}
+
+.social-area{
+    padding: 0px 120px;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+}
+
+.social-area .social-icon{
+    transition: all 0.2s;
+}
+
+.social-area .social-icon a{
+    font-size: 40px;
+    color: rgb(20, 20, 20);
+}
+
+.social-area .social-icon:hover{
+    transform: scale(1.3);
+}
+
+.social-icon:nth-child(2){
+    margin-left: 15px;
+}
