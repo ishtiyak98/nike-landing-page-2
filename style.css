@@ -5,19 +5,27 @@
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
+    line-height: 1;
 }
 
 body{
     font-family: 'Poppins', sans-serif;
-    
+    max-width: 1800px;
+    max-height: 900PX;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 nav{
-    padding: 30px 120px;
+    padding: 20px 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
+    width: 100%;
+    max-width: 1800px;
 }
 
 .middle-nav ul{
@@ -33,8 +41,15 @@ nav{
 }
 
 .middle-nav ul li a{
-    color: rgb(20, 20, 20);
-    
+    color: rgb(20, 20, 20);  
+}
+
+a:hover{
+    color: #EB4747;
+}
+
+.middle-nav ul li a:hover{
+    color: #EB4747;
 }
 
 .right-nav{
@@ -49,16 +64,27 @@ nav{
 
 .button-style a{
     color: white;
-    padding: 10px 40px;
+    padding: 14px 40px;
     background-color: rgb(20, 20, 20);
     border-radius: 5px;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.button-style a:hover{
+    background-color: #EB4747;
+}
+
+.main-body{
+    height: 100%;
 }
 
 .main-part{
-    height: 100vh;
+    /* height: 100vh; */
     padding: 0px 120px;
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .main-part .text-area{
@@ -66,20 +92,19 @@ nav{
 }
 
 .main-part .text-area h1{
-    font-size: 85px;
+    font-size: 80px; 
 }
 
 .main-part .text-area p{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     color: gray;
-    margin-top: 5px;
-    margin-bottom: 38px;
+    margin: 20px 0px;
+    line-height: 30px;
 }
 
 .main-part .img-area{
     width: 50%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,9 +112,10 @@ nav{
 }
 
 .main-part .img-area img{
-    width: 700px;
+    width: 550px;
     transform: rotate(-25deg);
     margin-left: -180px;
+    filter: drop-shadow(20px 15px 25px #222); 
 }
 
 .bounce{
@@ -110,13 +136,9 @@ nav{
 
 .main-part .img-area .circle{
     position: absolute;
-    
-    /* top: -40%;
-    left: 10%; */
-    width: 600px;
-    height: 600px;
-    /* background-color: #E6E6E4; */
-    border: 40px solid #E6E6E4;
+    width: 550px;
+    height: 550px;
+    border: 25px solid #E6E6E4;
     border-radius: 50%;
 }
 
@@ -129,9 +151,7 @@ nav{
 }
 
 .social-area{
-    padding: 0px 120px;
-    position: absolute;
-    bottom: 15px;
+    padding: 20px 120px;
     display: flex;
 }
 
@@ -146,6 +166,10 @@ nav{
 
 .social-area .social-icon:hover{
     transform: scale(1.3);
+}
+
+.social-area .social-icon a:hover{
+    color: #EB4747;
 }
 
 .social-icon:nth-child(2){
