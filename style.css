@@ -44,12 +44,36 @@ nav{
     color: rgb(20, 20, 20);  
 }
 
+.middle-nav ul li a:hover .dropdown-icon{
+    transform: rotate(180deg);
+}
+
 a:hover{
     color: #EB4747;
 }
 
 .middle-nav ul li a:hover{
     color: #EB4747;
+}
+
+.dropdown{
+    display: none;
+    justify-content: left;
+    background-color: #E6E6E4;
+    margin-top: 5px;
+    position: absolute;
+    width: 130px;
+    border-radius: 5px;
+    padding: 5px 2px;
+}
+
+.dropdown .dropdown-item{
+    margin: 5px 0px;
+    padding: 5px 10px;
+}
+
+.middle-nav ul li:hover .dropdown{
+    display: block;
 }
 
 .right-nav{
@@ -60,6 +84,10 @@ a:hover{
 .right-nav .cart-icon{
     font-size: 24px;
     margin-right: 40px;
+}
+
+.right-nav .cart-icon a{
+    color: rgb(20, 20, 20);
 }
 
 .button-style a{
