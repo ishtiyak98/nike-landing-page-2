@@ -1,5 +1,5 @@
 # Nike Landing Page
-## Live Link : (will be deployed soon)
+## Live link : https://ishtiyak98.github.io/nike-landing-page-2
 
 <br>
 
